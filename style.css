@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+
+body{           
+        min-width: 375px;
+        background: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Red Hat Display', sans-serif;
+        overflow-x: hidden;
+}
+
+main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+}
+
+
+.logo{
+        width: 119px;
+        height: 28px;
+        margin: 48px 0 54px 0;
+
+}
+.heroes-container{
+        width: calc(414px - 39px);
+        height: 153px;
+        margin-bottom: 48px;
+        background-image: url(./assets/tablet/image-hero.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -20px 0;
+}
+
+
+.hero-left,.hero-right{
+        display: none;
+}
+
+.title{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+h1{
+        width: 327px;
+        color: #28283D;
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 44px;
+        margin: 0 0 24px 0;
+}
+
+.description{
+        width: 327px;
+        color: #87879D;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        margin: 0 0 32px 0;
+}
+
+.buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 0 0 64px 0;
+}
+button{
+        height: 58px;
+        font-family: 'Red Hat Display', sans-serif;
+        border-radius: 29px;
+        border: none;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 26px; 
+}
+
+.buttons .download-button{
+        width: 193px;
+        background-color: #4D96A9;
+}
+
+.download-button span{
+        color: #8FE3F9;
+}
+
+.question-button{
+        width: 139px;
+        background-color: #855FB1;
+}
+
+.separator{
+        width: 56px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+hr{
+        border-left: 1px solid #87879D;
+        height: 84px;
+        opacity: 0.25;
+        margin: 0;
+}
+
+.separator span{
+        width: 56px;
+        height: 56px;
+        color: #87879D;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 26px; 
+        border-radius: 29px;
+        border: 1px solid rgba(135, 135, 157, 0.25);
+        background: #FAFAFA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+.image-wrapper{
+        width: 327px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 24px;
+        margin: 64px 24px ;
+}
+
+.image-wrapper div{
+        width: 151.5px;
+        height: 151.5px;
+        border-radius: 10px;
+}
+
+#id1{
+        background: url(./assets/desktop/image-woman-in-videocall.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#id2{
+        background: url(./assets/desktop/image-women-videochatting.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#id3{
+        background: url(./assets/desktop/image-men-in-meeting.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#id4{
+        background: url(./assets/desktop/image-man-texting.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+
+.text-wrapper{
+        margin: 0 24px 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.text-wrapper h3{
+        color: #4D96A9;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 26px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+}
+
+.text-wrapper h2{
+        width: 327px;
+        color: #28283D;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 36px; 
+}
+
+.text-wrapper p{
+        width: 327px;
+        color: #87879D;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+        margin-top: 32px;
+}
+
+.end-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        position: relative; 
+        z-index: 3; 
+}
+
+
+
+
+.footer {
+        margin-top:  -28px; ;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: url(./assets/mobile/image-footer.jpg) center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+.footer::before {
+        background-color: #4D96A9;
+        opacity: 0.8055;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+.footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+}
+
+ .footer h2{
+        width: 327px;
+        color: #FAFAFA;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 36px; 
+        margin: 92px 24px 24px;
+}
+
+.footer .info{
+        width: 327px;
+        color: #FAFAFA;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+        margin: 0 24px;
+}
+
+.footer-wrapper .download-button{
+        width: 193px;
+        background-color: #855FB1;
+        margin: 32px 0 72px 0;
+        position: relative;
+        z-index: 9;
+}
+
+
+.footer-wrapper .download-button span{
+        color: #D9B8FF;
+        
+}
+
+
+
+@media (min-width:768px){
+
+
+        
+.logo{
+        margin: 48px 0 64px 0;
+}
+
+
+.heroes-container{
+        width: calc(820px - 52px);
+        height: 303px;
+        margin-bottom: 72px;
+        background-image: url(./assets/tablet/image-hero.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -26px 0;
+}
+
+
+
+.title{
+        margin: 0 0 80px 0;
+}   
+
+h1{
+        width: 339px;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0 0 24px 0;
+}
+        
+.description{
+        width: 457px;
+}
+
+.buttons{
+        flex-direction: row;
+        margin: 0;
+}
+
+.image-wrapper{
+        width: 689px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
+        gap: 11px;
+        margin: 67px 0 48px 0;
+}
+        
+.image-wrapper div{
+        width: 164px;
+        height: 156px;
+}
+        
+
+.text-wrapper{
+        margin: 0 0 80px 0;
+}
+        
+.text-wrapper h3{
+        margin-bottom: 16px;
+}
+        
+.text-wrapper h2{
+        width: 445px;
+        font-size: 40px;
+        line-height: 44px; 
+}
+        
+.text-wrapper p{
+        width: 573px;
+}
+
+.text-wrapper p br{
+        display: none;
+}
+
+.footer {
+        background: url(./assets/tablet/image-footer.jpg) center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+     
+.footer h2{
+        width: 457px;
+        font-size: 40px;
+        line-height: 44px; 
+        margin: 92px 0 32px 0;
+}
+        
+.footer .info{
+        width: 573px;
+        margin: 0 ;
+}
+        
+.footer-wrapper .download-button{
+        margin: 40px 0 66px 0;
+}
+
+
+} 
+
+
+
+
+@media (min-width:1440px){
+
+.logo{
+margin: 80px 0 61px 0 ;
+}
+
+
+
+main{
+        display: flex;
+        flex-direction: row;
+        gap: 88px;
+        margin-bottom: 117px;
+        overflow-x: hidden
+}
+
+.heroes-container{
+        display: none;
+}
+
+.hero-left{
+        display: block;
+        transform:translateX(-32px);
+}
+.hero-right{
+        display: block;
+        transform: translateX(32px);
+        order: 1;
+}
+
+
+.title{
+        margin:  0 ;
+}   
+                
+h1{
+        width: 445px;
+        font-size: 64px;
+        line-height:64px;
+        margin: 0 0 24px 0;
+}
+                        
+.description{
+        width: 457px;
+        font-size: 18px;
+        line-height: 26px;
+}
+                
+.buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+}
+
+.download-button:hover{
+        cursor: pointer;
+        background-color: #71C0D4;
+} 
+
+
+.question-button:hover{
+        cursor: pointer;
+        background-color:  #B18BDD;
+}
+                
+                
+.image-wrapper{
+        width: 1110px;
+        gap: 30px;
+        margin: 64px 0 80px 0;
+}
+                        
+.image-wrapper div{
+        width: 255px;
+        height: 242px;
+}
+                        
+
+.text-wrapper{
+        margin: 0 0 80px 0;
+}
+                        
+                 
+.text-wrapper p{
+        width: 540px;
+        font-size: 18px;
+}
+
+.text-wrapper .br{
+        display: block;
+}
+.footer {
+        background: url(./assets/desktop/image-footer.jpg) center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+
+.footer-wrapper{
+        flex-direction: row;
+        text-align: start;
+       padding: 88px 165px 104px 165px;
+}
+
+.footer h2{
+        margin: 0 125px 0 0;
+}
+                        
+.footer .info{
+        width: 350px;
+        margin: 0 ;
+}
+                        
+.footer-wrapper .download-button{
+        margin: 0 0 0 92px;
+}
+                
+.footer-wrapper .download-button:hover{
+        cursor: pointer;
+        background-color:  #B18BDD;
+}
+
+
+}
